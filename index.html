@@ -61,7 +61,7 @@
 
     /* ── Tarjeta ── */
     .card {
-      max-width: 440px;
+      max-width: 480px;   /* cap cómodo en desktop, imagen escala con width:100% */
       width: 100%;
       background: #fff;
       border-radius: 24px;
@@ -83,6 +83,7 @@
     /* ── Imagen de invitación ── */
     .invite-img {
       width: 100%;
+      height: auto;        /* respeta la proporción nativa 1083×1452 */
       display: block;
       cursor: pointer;
       transition: opacity .2s, transform .2s;
@@ -169,7 +170,6 @@
      target="_blank" rel="noopener">
     <img class="invite-img"
          src="invitation2.jpg"
-         width="1083" height="1452"
          alt="Baby Shower Kianna – August 2, 2026 · 4:00 PM">
   </a>
 
