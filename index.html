@@ -1,246 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Baby Shower – Kianna 🦋</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baby Shower – Kianna 🦋</title>
 
-<meta name="description" content="August 2, 2026 · 4:00 PM · 12032 Holmes Point Dr NE, Kirkland">
+  <!-- ═══════════════════════════════════════════════════
+       Open Graph — WhatsApp · Facebook · Telegram
+       invitation.jpg: 1200×630 px (landscape, HTTPS, mismo dominio)
+       ═══════════════════════════════════════════════════ -->
+  <meta property="og:type"             content="website">
+  <meta property="og:url"              content="https://kianna-baby-shower.vercel.app/">
+  <meta property="og:title"            content="Baby Shower – Kianna 🦋">
+  <meta property="og:description"      content="August 2, 2026 · 4:00 PM · 12032 Holmes Point Dr NE, Kirkland, WA 98034">
+  <meta property="og:image"            content="https://kianna-baby-shower.vercel.app/invitation.jpg">
+  <meta property="og:image:type"       content="image/jpeg">
+  <meta property="og:image:width"      content="1200">
+  <meta property="og:image:height"     content="630">
+  <meta property="og:image:alt"        content="Baby Shower Kianna – August 2, 2026">
 
-<!-- Facebook / WhatsApp / Telegram Meta Tags -->
-<meta property="og:url"         content="https://kianna-baby-shower.vercel.app/">
-<meta property="og:type"        content="website">
-<meta property="og:title"       content="Baby Shower – Kianna 🌸">
-<meta property="og:description" content="August 2, 2026 · 4:00 PM · 12032 Holmes Point Dr NE, Kirkland">
-<meta property="og:image"            content="https://i.ibb.co/VW4451Rq/invitation.jpg">
-<meta property="og:image:secure_url" content="https://i.ibb.co/VW4451Rq/invitation.jpg">
-<meta property="og:image:type"  content="image/jpeg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt"   content="Baby Shower Kianna – August 2, 2026">
-<meta property="og:site_name"   content="Baby Shower Kianna">
-<meta property="og:locale"      content="en_US">
+  <!-- ═══════════════════════════════════════════════════
+       Twitter Card — iMessage · X
+       ═══════════════════════════════════════════════════ -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Baby Shower – Kianna 🦋">
+  <meta name="twitter:description" content="August 2, 2026 · 4:00 PM · 12032 Holmes Point Dr NE, Kirkland, WA 98034">
+  <meta name="twitter:image"       content="https://kianna-baby-shower.vercel.app/invitation.jpg">
+  <meta name="twitter:image:alt"   content="Baby Shower Kianna – August 2, 2026">
 
-<!-- Twitter / iMessage Meta Tags -->
-<meta name="twitter:card"        content="summary_large_image">
-<meta property="twitter:domain"  content="kianna-baby-shower.vercel.app">
-<meta property="twitter:url"     content="https://kianna-baby-shower.vercel.app/">
-<meta name="twitter:title"       content="Baby Shower – Kianna 🌸">
-<meta name="twitter:description" content="August 2, 2026 · 4:00 PM · 12032 Holmes Point Dr NE, Kirkland">
-<meta name="twitter:image"       content="https://i.ibb.co/VW4451Rq/invitation.jpg">
-<meta name="twitter:image:alt"   content="Baby Shower Kianna – August 2, 2026">
+  <!-- Pre-carga la imagen de portada lo antes posible -->
+  <link rel="preload" as="image" href="invitation.jpg" fetchpriority="high">
 
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
-<style>
-  :root {
-    --gold:       #c9952a;
-    --gold-light: #e8c46a;
-    --gold-pale:  #fdf4e3;
-    --purple:     #7b35a0;
-    --purple-dark:#4e1f6b;
-    --pink:       #e04a8e;
-    --pink-light: #f7b8d8;
-    --cream:      #fffdf9;
-    --text-dark:  #3a1a4e;
-  }
+  <style>
+    :root {
+      --gold:       #c9952a;
+      --gold-light: #e8c46a;
+      --purple:     #7b35a0;
+      --pink:       #e04a8e;
+      --cream:      #fffdf9;
+      --text:       #3a1a4e;
+    }
 
-  * { box-sizing: border-box; margin: 0; padding: 0; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  body {
-    background: var(--cream);
-    background-image:
-      radial-gradient(ellipse at 10% 20%, rgba(230,190,210,0.25) 0%, transparent 50%),
-      radial-gradient(ellipse at 90% 80%, rgba(180,130,220,0.20) 0%, transparent 50%);
-    min-height: 100vh;
-    font-family: 'Lato', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
-    overflow-x: hidden;
-  }
+    body {
+      min-height: 100vh;
+      background: var(--cream);
+      background-image:
+        radial-gradient(ellipse at 15% 20%, rgba(230,190,210,.22) 0%, transparent 55%),
+        radial-gradient(ellipse at 85% 80%, rgba(180,130,220,.18) 0%, transparent 55%);
+      font-family: 'Lato', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
 
-  /* ── Confetti dots (decorative) ── */
-  body::before, body::after {
-    content: '';
-    position: fixed;
-    top: 0; bottom: 0;
-    width: 60px;
-    background-image: radial-gradient(circle, var(--gold) 2px, transparent 2px);
-    background-size: 18px 18px;
-    opacity: 0.28;
-    pointer-events: none;
-    animation: shimmer 4s ease-in-out infinite alternate;
-  }
-  body::before { left: 0; }
-  body::after  { right: 0; }
+    /* ── Tarjeta ── */
+    .card {
+      max-width: 440px;
+      width: 100%;
+      background: #fff;
+      border-radius: 24px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow:
+        0 2px 0  rgba(201,149,42,.35),   /* borde inferior dorado */
+        0 16px 48px rgba(100,40,140,.16),
+        0  4px 16px rgba(200,150,40,.12);
+      outline: 1.5px solid rgba(201,149,42,.25);
+      animation: fadeUp .55s cubic-bezier(.22,1,.36,1) both;
+    }
 
-  @keyframes shimmer {
-    from { opacity: 0.18; }
-    to   { opacity: 0.38; }
-  }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(22px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
 
-  /* ── Card wrapper: gradient border sin artefactos ── */
-  .card-wrapper {
-    max-width: 460px;
-    width: 100%;
-    border-radius: 30px;
-    padding: 3px;
-    background: linear-gradient(90deg, var(--pink), var(--gold), var(--purple), var(--gold), var(--pink));
-    background-size: 300% 100%;
-    animation: gradientMove 4s linear infinite, cardIn 0.7s cubic-bezier(.22,1,.36,1) both;
-    box-shadow:
-      0 12px 50px rgba(100,40,140,0.18),
-      0 4px 16px rgba(200,150,40,0.15);
-  }
+    /* ── Imagen de invitación ── */
+    .invite-img {
+      width: 100%;
+      display: block;
+      cursor: pointer;
+      transition: opacity .2s, transform .2s;
+    }
+    .invite-img:hover { opacity: .94; transform: scale(1.008); }
 
-  @keyframes gradientMove {
-    0%   { background-position: 0%   50%; }
-    100% { background-position: 300% 50%; }
-  }
+    /* ── Contenido ── */
+    .content { padding: 22px 28px 30px; }
 
-  @keyframes cardIn {
-    from { opacity: 0; transform: translateY(30px) scale(0.97); }
-    to   { opacity: 1; transform: translateY(0)  scale(1);     }
-  }
+    .label {
+      font-size: 10.5px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
 
-  /* ── Card ── */
-  .card {
-    background: #fff;
-    border-radius: 27px;
-    width: 100%;
-    overflow: hidden;
-    text-align: center;
-    position: relative;
-  }
+    /* Separador */
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+    .divider-line {
+      flex: 1;
+      max-width: 72px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold-light, #e8c46a), transparent);
+    }
 
-  /* ── Invitation image ── */
-  .invitation-img {
-    width: 100%;
-    display: block;
-    cursor: pointer;
-    transition: opacity 0.25s, transform 0.25s;
-  }
-  .invitation-img:hover {
-    opacity: 0.93;
-    transform: scale(1.012);
-  }
+    /* ── Botones ── */
+    .btn-group { display: flex; flex-direction: column; gap: 10px; }
 
-  /* ── Content area ── */
-  .content {
-    padding: 26px 32px 34px;
-    position: relative;
-  }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 13px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: #fff;
+      transition: transform .16s, box-shadow .16s;
+    }
+    .btn:hover  { transform: translateY(-2px); }
+    .btn:active { transform: scale(.97); }
 
-  /* Decorative butterfly SVG behind content */
-  .bg-butterfly {
-    position: absolute;
-    top: 10px; right: 14px;
-    opacity: 0.07;
-    pointer-events: none;
-  }
+    .btn-registry {
+      background: linear-gradient(135deg, #d4a43a, #c9952a, #b87e1a);
+      box-shadow: 0 4px 18px rgba(201,149,42,.38);
+    }
+    .btn-registry:hover { box-shadow: 0 7px 26px rgba(201,149,42,.52); }
 
-  .eyebrow {
-    font-size: 11px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--gold);
-    font-weight: 700;
-    margin-bottom: 18px;
-  }
+    .btn-location {
+      background: linear-gradient(135deg, #e04a8e, #c03580, #8b24a0);
+      box-shadow: 0 4px 18px rgba(180,52,128,.32);
+    }
+    .btn-location:hover { box-shadow: 0 7px 26px rgba(180,52,128,.46); }
 
-  /* ── Gold divider with butterfly ── */
-  .divider {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 0 auto 22px;
-    justify-content: center;
-  }
-  .divider-line {
-    flex: 1;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--gold-light), transparent);
-    max-width: 80px;
-  }
-  .divider svg { opacity: 0.6; }
-
-  /* ── Buttons ── */
-  .btn-group { display: flex; flex-direction: column; gap: 11px; }
-
-  .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 14px 20px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 13.5px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    transition: transform 0.18s, box-shadow 0.18s;
-  }
-  .btn:hover  { transform: translateY(-2px); }
-  .btn:active { transform: scale(0.97); }
-
-  /* Gold gradient button */
-  .btn-amazon {
-    background: linear-gradient(135deg, #d4a43a 0%, #c9952a 50%, #b87e1a 100%);
-    color: #fff;
-    box-shadow: 0 4px 18px rgba(201,149,42,0.4);
-  }
-  .btn-amazon:hover { box-shadow: 0 7px 28px rgba(201,149,42,0.55); }
-
-  /* Pink/purple gradient button */
-  .btn-location {
-    background: linear-gradient(135deg, #e04a8e 0%, #c03580 50%, #8b24a0 100%);
-    color: #fff;
-    box-shadow: 0 4px 18px rgba(180,52,128,0.35);
-  }
-  .btn-location:hover { box-shadow: 0 7px 28px rgba(180,52,128,0.50); }
-
-  /* ── Footer ── */
-  .footer-note {
-    margin-top: 20px;
-    font-size: 11px;
-    color: #b8a0c8;
-    letter-spacing: 0.06em;
-    line-height: 1.6;
-  }
-  .footer-note strong {
-    color: var(--gold);
-    font-weight: 700;
-  }
-</style>
+    /* ── Pie ── */
+    .footer {
+      margin-top: 18px;
+      font-size: 11px;
+      color: #b8a0c8;
+      letter-spacing: .05em;
+      line-height: 1.7;
+    }
+    .footer strong { color: var(--gold); font-weight: 700; }
+  </style>
 </head>
 <body>
 
-<div class="card-wrapper">
 <div class="card">
 
-  <!-- invitation2.jpg: única imagen visible en la página -->
-  <a href="https://www.amazon.com/baby-reg/analiaandwilliam-ring-september-2026-buckley/3IODCW38XY4N9?ref_=cm_sw_r_apin_dp_XB4SSRJFS3HG8J47GC5H&language=en-US" target="_blank">
-    <img class="invitation-img" src="invitation2.jpg" alt="Baby Shower Kianna – August 2, 2026 at 4:00 PM">
+  <!-- Imagen visible en la página (portrait, full detail) -->
+  <a href="https://www.amazon.com/baby-reg/analiaandwilliam-ring-september-2026-buckley/3IODCW38XY4N9?ref_=cm_sw_r_apin_dp_XB4SSRJFS3HG8J47GC5H&language=en-US"
+     target="_blank" rel="noopener">
+    <img class="invite-img"
+         src="invitation2.jpg"
+         width="1083" height="1452"
+         alt="Baby Shower Kianna – August 2, 2026 · 4:00 PM">
   </a>
 
   <div class="content">
 
-    <!-- Subtle bg butterfly -->
-    <svg class="bg-butterfly" width="90" height="80" viewBox="0 0 90 80" fill="none">
-      <path d="M45 40 C30 10 5 5 10 30 C15 50 35 48 45 40Z" fill="#7b35a0"/>
-      <path d="M45 40 C60 10 85 5 80 30 C75 50 55 48 45 40Z" fill="#e04a8e"/>
-      <path d="M45 40 C32 55 12 65 18 50 C24 38 38 44 45 40Z" fill="#7b35a0" opacity=".7"/>
-      <path d="M45 40 C58 55 78 65 72 50 C66 38 52 44 45 40Z" fill="#e04a8e" opacity=".7"/>
-    </svg>
-
-    <p class="eyebrow">🦋 Tap the image or choose an option</p>
+    <p class="label">🦋 Open Invitation to take you directly to Gift registry</p>
 
     <div class="divider">
       <div class="divider-line"></div>
-      <svg width="22" height="20" viewBox="0 0 90 80" fill="none">
+      <!-- mariposa SVG inline: cero petición HTTP extra -->
+      <svg width="20" height="18" viewBox="0 0 90 80" fill="none" aria-hidden="true">
         <path d="M45 40 C30 10 5 5 10 30 C15 50 35 48 45 40Z" fill="#c9952a"/>
         <path d="M45 40 C60 10 85 5 80 30 C75 50 55 48 45 40Z" fill="#e04a8e"/>
         <path d="M45 40 C32 55 12 65 18 50 C24 38 38 44 45 40Z" fill="#c9952a" opacity=".7"/>
@@ -249,13 +189,14 @@
       <div class="divider-line"></div>
     </div>
 
-    <!-- CTA Buttons -->
     <div class="btn-group">
-      <a class="btn btn-amazon"
+
+      <a class="btn btn-registry"
          href="https://www.amazon.com/baby-reg/analiaandwilliam-ring-september-2026-buckley/3IODCW38XY4N9?ref_=cm_sw_r_apin_dp_XB4SSRJFS3HG8J47GC5H&language=en-US"
-         target="_blank">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-             stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+         target="_blank" rel="noopener">
+        <!-- bolsa de compras -->
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
           <line x1="3" y1="6" x2="21" y2="6"/>
           <path d="M16 10a4 4 0 0 1-8 0"/>
@@ -265,23 +206,24 @@
 
       <a class="btn btn-location"
          href="https://share.google/dul9C7xfuQYGo2kIc"
-         target="_blank">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-             stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+         target="_blank" rel="noopener">
+        <!-- pin de mapa -->
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
           <circle cx="12" cy="10" r="3"/>
         </svg>
         View Event Location
       </a>
+
     </div>
 
-    <p class="footer-note">
-      <strong>12032 Holmes Point Dr NE</strong>, Kirkland, WA<br>
+    <p class="footer">
+      <strong>12032 Holmes Point Dr NE</strong>, Kirkland, WA 98034<br>
       August 2, 2026 &middot; 4:00 PM
     </p>
-  </div>
 
-</div>
+  </div>
 </div>
 
 </body>
