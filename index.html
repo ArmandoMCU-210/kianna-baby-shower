@@ -36,12 +36,12 @@
 
   <style>
     :root {
-      --gold:       #c9952a;
-      --gold-light: #e8c46a;
-      --purple:     #7b35a0;
-      --pink:       #e04a8e;
-      --cream:      #fffdf9;
-      --text:       #3a1a4e;
+      --gold:       #D9B13B;
+      --gold-light: #D9BB62;
+      --sand:       #D9CCA7;
+      --brown:      #8C4E03;
+      --cream:      #F2F2F2;
+      --text:       #8C4E03;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -50,8 +50,8 @@
       min-height: 100vh;
       background: var(--cream);
       background-image:
-        radial-gradient(ellipse at 15% 20%, rgba(230,190,210,.22) 0%, transparent 55%),
-        radial-gradient(ellipse at 85% 80%, rgba(180,130,220,.18) 0%, transparent 55%);
+        radial-gradient(ellipse at 15% 20%, rgba(217,177,59,.20) 0%, transparent 55%),
+        radial-gradient(ellipse at 85% 80%, rgba(140,78,3,.14) 0%, transparent 55%);
       font-family: 'Lato', sans-serif;
       display: flex;
       align-items: center;
@@ -68,10 +68,10 @@
       overflow: hidden;
       text-align: center;
       box-shadow:
-        0 2px 0  rgba(201,149,42,.35),   /* borde inferior dorado */
-        0 16px 48px rgba(100,40,140,.16),
-        0  4px 16px rgba(200,150,40,.12);
-      outline: 1.5px solid rgba(201,149,42,.25);
+        0 2px 0  rgba(217,177,59,.40),   /* borde inferior dorado */
+        0 16px 48px rgba(140,78,3,.16),
+        0  4px 16px rgba(217,177,59,.14);
+      outline: 1.5px solid rgba(217,177,59,.28);
       animation: fadeUp .55s cubic-bezier(.22,1,.36,1) both;
     }
 
@@ -97,7 +97,7 @@
       font-size: 10.5px;
       letter-spacing: .18em;
       text-transform: uppercase;
-      color: var(--gold);
+      color: var(--brown);
       font-weight: 700;
       margin-bottom: 16px;
     }
@@ -114,7 +114,7 @@
       flex: 1;
       max-width: 72px;
       height: 1px;
-      background: linear-gradient(90deg, transparent, var(--gold-light, #e8c46a), transparent);
+      background: linear-gradient(90deg, transparent, var(--gold-light, #D9BB62), transparent);
     }
 
     /* ── Botones ── */
@@ -132,33 +132,34 @@
       font-size: 13px;
       letter-spacing: .06em;
       text-transform: uppercase;
-      color: #fff;
+      color: var(--cream);
       transition: transform .16s, box-shadow .16s;
     }
     .btn:hover  { transform: translateY(-2px); }
     .btn:active { transform: scale(.97); }
 
     .btn-registry {
-      background: linear-gradient(135deg, #d4a43a, #c9952a, #b87e1a);
-      box-shadow: 0 4px 18px rgba(201,149,42,.38);
+      background: linear-gradient(135deg, #D9BB62, #D9B13B, #8C4E03);
+      box-shadow: 0 4px 18px rgba(140,78,3,.38);
     }
-    .btn-registry:hover { box-shadow: 0 7px 26px rgba(201,149,42,.52); }
+    .btn-registry:hover { box-shadow: 0 7px 26px rgba(140,78,3,.52); }
 
     .btn-location {
-      background: linear-gradient(135deg, #e04a8e, #c03580, #8b24a0);
-      box-shadow: 0 4px 18px rgba(180,52,128,.32);
+      background: linear-gradient(135deg, #8C4E03, #D9B13B, #D9BB62);
+      box-shadow: 0 4px 18px rgba(140,78,3,.32);
     }
-    .btn-location:hover { box-shadow: 0 7px 26px rgba(180,52,128,.46); }
+    .btn-location:hover { box-shadow: 0 7px 26px rgba(140,78,3,.46); }
 
     /* ── Pie ── */
     .footer {
       margin-top: 18px;
       font-size: 11px;
-      color: #b8a0c8;
+      color: var(--brown);
+      opacity: .8;
       letter-spacing: .05em;
       line-height: 1.7;
     }
-    .footer strong { color: var(--gold); font-weight: 700; }
+    .footer strong { color: var(--brown); opacity: 1; font-weight: 700; }
   </style>
 </head>
 <body>
@@ -181,10 +182,10 @@
       <div class="divider-line"></div>
       <!-- mariposa SVG inline: cero petición HTTP extra -->
       <svg width="20" height="18" viewBox="0 0 90 80" fill="none" aria-hidden="true">
-        <path d="M45 40 C30 10 5 5 10 30 C15 50 35 48 45 40Z" fill="#c9952a"/>
-        <path d="M45 40 C60 10 85 5 80 30 C75 50 55 48 45 40Z" fill="#e04a8e"/>
-        <path d="M45 40 C32 55 12 65 18 50 C24 38 38 44 45 40Z" fill="#c9952a" opacity=".7"/>
-        <path d="M45 40 C58 55 78 65 72 50 C66 38 52 44 45 40Z" fill="#e04a8e" opacity=".7"/>
+        <path d="M45 40 C30 10 5 5 10 30 C15 50 35 48 45 40Z" fill="#8C4E03"/>
+        <path d="M45 40 C60 10 85 5 80 30 C75 50 55 48 45 40Z" fill="#D9B13B"/>
+        <path d="M45 40 C32 55 12 65 18 50 C24 38 38 44 45 40Z" fill="#8C4E03" opacity=".7"/>
+        <path d="M45 40 C58 55 78 65 72 50 C66 38 52 44 45 40Z" fill="#D9B13B" opacity=".7"/>
       </svg>
       <div class="divider-line"></div>
     </div>
